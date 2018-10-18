@@ -1,12 +1,10 @@
 # Base Image from Docker Hub
-FROM microsoft/aspnetcore:2.0
-
-MAINTAINER Jeremy Morgan version: 0.1
+FROM microsoft/dotnet:2.1-runtime AS runtime
 
 # Our working directory
 WORKDIR /app
 # Copy over our artifacts and certificate
-COPY ./artifacts .
+COPY ./bin/Release/netcoreapp2.1/publish .
 # Open our Port
 EXPOSE 5001
 # Run the application

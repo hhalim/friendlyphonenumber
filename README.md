@@ -20,8 +20,8 @@ and returns a JSON object with the phone number formatted;
 
 This is just a simple service to be used as an example for the article, not intended for production use. 
 
-## DZone Microservices 
+To BUILD:
+docker build -t friendlyphonenumber .
 
-Check out DZone's new Microservices section here:
-
-https://dzone.com/microservices-news-tutorials-tools
+TO RUN:
+docker run --name friendlyphonenumber -p 5001:5001 friendlyphonenumber:latest

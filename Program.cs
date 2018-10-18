@@ -25,7 +25,7 @@ namespace friendlyphonenumber
                 {
                     options.Listen(IPAddress.Any, 5001, listenOptions =>
                     {
-                        listenOptions.UseHttps("<YOUR CERT>.pfx", "<YOURPASSWORD>");
+                        //listenOptions.UseHttps("<YOUR CERT>.pfx", "<YOURPASSWORD>");
                     });                 
                 })
                 .Build();
