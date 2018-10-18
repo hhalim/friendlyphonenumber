@@ -20,8 +20,8 @@ and returns a JSON object with the phone number formatted;
 
 This is just a simple service to be used as an example for the article, not intended for production use. 
 
-To BUILD:
+### BUILD
 docker build -t friendlyphonenumber .
 
-TO RUN:
+### RUN
 docker run --name friendlyphonenumber -p 5001:5001 friendlyphonenumber:latest
